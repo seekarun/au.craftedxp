@@ -24,6 +24,10 @@ export const metadata: Metadata = {
     "digital transformation",
   ],
   authors: [{ name: "Crafted XP" }],
+  icons: {
+    icon: "/cxp_icon.png",
+    apple: "/cxp_icon.png",
+  },
   openGraph: {
     title: "Crafted XP | Exceptional Digital Experiences",
     description:
