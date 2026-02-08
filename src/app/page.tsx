@@ -13,7 +13,7 @@ const Home = () => {
     document.body.appendChild(script);
     return () => {
       script.remove();
-      window.CallyEmbed = undefined;
+      delete (window as unknown as Record<string, unknown>).CallyEmbed;
     };
   }, []);
 
