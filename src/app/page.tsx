@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 const Home = () => {
   return (
@@ -9,6 +10,13 @@ const Home = () => {
         width={200}
         height={200}
         priority
+      />
+      <Script
+        src="https://proj-cally.vercel.app/embed.js"
+        data-tenant-id="uIUD5iirVfgH"
+        data-widget="contact"
+        data-mode="popup"
+        strategy="afterInteractive"
       />
     </div>
   );
