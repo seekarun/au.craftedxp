@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const Home = () => {
   useEffect(() => {
@@ -13,8 +13,7 @@ const Home = () => {
     document.body.appendChild(script);
     return () => {
       script.remove();
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (window as any).CallyEmbed = undefined;
+      window.CallyEmbed = undefined;
     };
   }, []);
 
